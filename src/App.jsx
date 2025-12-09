@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { 
+  Boxes, 
+  Pointer, 
+  SquareStack, 
+  Layers, 
+  Palette 
+} from "lucide-react";
+
+import BasicProps from './components/BasicProps.jsx';
+import ChildrenProps from './components/ChildrenProps.jsx';
+import ComplesProps from './components/ComplexProps.jsx';
+import RefProps from './components/RefProps.jsx';
+import ThemeToggler from './components/ThemeToggler.jsx';
+
+function Navigation (){
+  const isDark = true;
+
+  const sections = [
+  { id: "basic", label: "Basic Props", icon: Boxes },
+  { id: "ref", label: "Ref Props", icon: Pointer },
+  { id: "children", label: "Children Props", icon: SquareStack },
+  { id: "complex", label: "Complex Props", icon: Layers },
+  { id: "theme", label: "Theme Props", icon: Palette }
+];
+}
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
       <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      
     </>
   )
 }
