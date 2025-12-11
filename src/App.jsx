@@ -41,7 +41,12 @@ function AppContent() {
   return (
     <div className="min-h-screen bg-gray-900">
       <Navigation />
-      <h1 className="text-white">Hello World !</h1>
+      <h1 className="text-white text-2xl font-bold px-4 py-5">We Learn React States</h1>
+      <div className="container mx-auto">
+
+      <BasicProps />
+      <ChildrenProps />
+      </div>
     </div>
   );
 }
