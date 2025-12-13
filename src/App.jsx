@@ -46,6 +46,7 @@ function AppContent() {
 
       <BasicProps />
       <ChildrenProps />
+      <ComplesProps />
       </div>
     </div>
   );
