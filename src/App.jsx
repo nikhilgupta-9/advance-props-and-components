@@ -48,6 +48,7 @@ function AppContent() {
       <ChildrenProps />
       <ComplesProps />
       <RefProps />
+      <ThemeToggler />
       </div>
     </div>
   );
